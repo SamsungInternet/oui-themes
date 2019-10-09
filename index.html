@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="oui-css/oui.css">
+    <title>One UI Web Theme Creator</title>
+    <style>
+        .buckets-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        .color-bucket-container {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .margin-auto {
+            margin: auto;
+        }
+
+        .color-title {
+            font-size: .9rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            margin: 20px 10px 10px 20px;
+            color: #858585;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>One UI Web Themes</h1>
+    </div>
+    <h2 class="section-title">Preview</h2>
+    <fieldset class="oui-bubble">
+        <!--Badge-->
+        <div class="oui-badge oui-badge-placement">N</div>
+        <!--Textbox-->
+        <label class="oui-label"><span>Name</span>
+            <input type="text" class="oui-input-textual-embed">
+        </label>
+        <!--Toggle-->
+        <label class="oui-label oui-container-toggle">
+            <input type="checkbox" class="toggle">
+            <span class="toggle-slider"></span>
+            <span>18+</span>
+        </label>
+        <!--Slider-->
+        <label class="oui-label oui-container-slider">
+            <span>Range</span>
+            <input type="range" class="oui-input-slider" name="points" min="0" max="10">
+        </label>
+        <!--Radioboxes-->
+        <p>Gender:</p>
+        <label class="oui-label oui-container-radio">
+            <input type="radio" class="oui-input-radio" name="radio" value="radio1">
+            <span class="oui-input-text">Stapler</span>
+            <span class="oui-input-radio-checkmark"></span>
+        </label>
+        <label class="oui-label oui-container-radio">
+            <input type="radio" class="oui-input-radio" name="radio" value="radio2">
+            <span class="oui-input-text">Slime</span>
+            <span class="oui-input-radio-checkmark"></span>
+        </label>
+        <label class="oui-label oui-container-radio">
+            <input type="radio" class="oui-input-radio" name="radio" value="radio3">
+            <span class="oui-input-text">Cashmere</span>
+            <span class="oui-input-radio-checkmark"></span>
+        </label>
+        <!--Checkbox-->
+        <label class="oui-label oui-container-checkbox">
+            <span class="oui-input-text">New User</span>
+            <input type="checkbox" class="oui-input-checkbox" name="check1" value="check1">
+            <span class="oui-input-checkbox-checkmark"></span>
+        </label>
+
+        <input type="button" value="Cancel" class="oui-button">
+
+        <input type="button" value="Accept" class="oui-button oui-button--active">
+
+
+    </fieldset>
+
+    <h2 class="section-title">Configuration</h2>
+    <div class="buckets-container">
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Text</h3>
+            <input type="color" value="#252525" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Text Secondary</h3>
+            <input type="color" value="#858585" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Primary</h3>
+            <input type="color" value="#0A78FC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Primary Variant</h3>
+            <input type="color" value="#0A78FC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Secondary</h3>
+            <input type="color" value="#0A78FC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Secondary Variant</h3>
+            <input type="color" value="#0A78FC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Active</h3>
+            <input type="color" value="#4297ff" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Inactive</h3>
+            <input type="color" value="#A8D3F6" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Background</h3>
+            <input type="color" value="#F2F2F2" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Control Background</h3>
+            <input type="color" value="#e6e6e6" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Textual Background</h3>
+            <input type="color" value="#FCFCFC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Surface</h3>
+            <input type="color" value="#FCFCFC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Error</h3>
+            <input type="color" value="#f01445" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Badge</h3>
+            <input type="color" value="#F56A0D" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Primary</h3>
+            <input type="color" value="#FFFFFF" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Secondary</h3>
+            <input type="color" value="#FFFFFF" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Background</h3>
+            <input type="color" value="#858585" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Surface</h3>
+            <input type="color" value="#252525" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Error</h3>
+            <input type="color" value="#FCFCFC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">On Accent Badge</h3>
+            <input type="color" value="#FFFFFF" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Border</h3>
+            <input type="color" value="#e6e6e6" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">App Variable Accent</h3>
+            <input type="color" value="#0A78FC" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Toast Background</h3>
+            <input type="color" value="#747474" class="margin-auto">
+        </div>
+        <div class="oui-bubble color-bucket-container">
+            <h3 class="color-title margin-auto">Tab Background</h3>
+            <input type="color" value="#FCFCFC" class="margin-auto">
+        </div>
+    </div>
+    
+</body>
+</html>
