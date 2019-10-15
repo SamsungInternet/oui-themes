@@ -39,10 +39,6 @@
             color: var(--on-background);
         }
 
-        h3 {
-            text-shadow: silver;
-        }
-
         #creator-grid {
             display: grid;
             grid-template: 6em auto/ 1fr 1fr;
@@ -62,6 +58,7 @@
             grid-column: 1 / -1;
             grid-row: 1 / 2;
             text-align: center;
+            color: var(--on-background);
         }
 
         /*LIGHT THEME COLORS*/
@@ -156,8 +153,8 @@
                 <input type="button" value="Accept" class="oui-button oui-button--active">
 
             </fieldset>
-            <input type="text" class="oui-input-textual">
-            <a href="#" id="downloadLink" download="theme.css">Download Theme</a>
+            <input type="text" class="oui-input-textual" id="txtDownloadName" placeholder="my-custom-theme.css">
+            <a href="#" id="downloadLink">Download Theme</a>
         </div>
         <div id="color-config-pane">
             <h2 class="section-title">Configuration</h2>
@@ -281,9 +278,19 @@
 
         let dl = document.getElementById('downloadLink');
         dl.onclick = function(){
+            dl.setAttribute('download', getDownloadName());
             var url = 'data:text/css;base64,'+btoa(getTheme());
             dl.href = url;
-    }
+        }
+
+        let getDownloadName = () => {
+            let ret = '';
+            let dlname = document.getElementById('txtDownloadName').value;
+            if(dlname == '')
+                ret = 'my-custom-theme.css';
+            else ret = dlname;
+            return ret;
+        };
     </script>
 </body>
 </html>
