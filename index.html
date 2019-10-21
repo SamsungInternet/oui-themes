@@ -153,7 +153,7 @@
                 <input type="button" value="Accept" class="oui-button oui-button--active">
 
             </fieldset>
-            <input type="text" class="oui-input-textual" id="txtDownloadName" placeholder="my-custom-theme.css">
+            <input type="text" class="oui-input-textual" id="txtDownloadName" placeholder="theme-name">
             <a href="#" id="downloadLink">Download Theme</a>
         </div>
         <div id="color-config-pane">
@@ -273,7 +273,12 @@
         });
 
         let getTheme = () => {
-            return `:root{}`;
+            let theme = '';
+            colorInputs.forEach(input => {
+                theme += `\t${input.name}: ${input.value};\n`;
+            });
+
+            return `:root{\n${theme}}`;
         };
 
         let dl = document.getElementById('downloadLink');
@@ -288,7 +293,7 @@
             let dlname = document.getElementById('txtDownloadName').value;
             if(dlname == '')
                 ret = 'my-custom-theme.css';
-            else ret = dlname;
+            else ret = `${dlname}.css`;
             return ret;
         };
     </script>
