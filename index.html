@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web@4e631cf/oui-css/oui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web@1bbabb2/oui-css/oui.css">
     <!-- <link rel="stylesheet" type="text/css" href="oui-css/oui.css"> -->
     <title>One UI Web Theme Creator</title>
     <style>
@@ -59,45 +59,6 @@
             grid-row: 1 / 2;
             text-align: center;
             color: var(--on-background);
-        }
-
-        /*LIGHT THEME COLORS*/
-        /*main theme variables*/
-        :root{
-            --text: var(--black);
-            --text-secondary: var(--d-grey);
-            --primary: var(--blue);
-            --secondary: var();
-            --active: var(--l-blue);
-            --inactive: var(--xl-blue);
-
-            /*backgrounds*/
-            --background: var(--xl-grey);
-            --control-background: var(--m-grey);
-            --textual-background: var(--white);
-            --surface-background: var(--white);
-            --alt-surface-background: var(--d-grey);
-
-            /*accents*/
-            --error: var(--red);
-            --confirmation: var(--green);
-            --accent-badge: var(--orange);
-
-            /*on top colors*/
-            --on-primary: var(--p-white);
-            --on-secondary: var();
-            --on-background: var(--d-grey);
-            --on-alt-background: var(--p-white);
-            --on-surface: var(--black);
-            --on-error: var(--white);
-            --on-confirmation: var(--white);
-            --on-accent-badge: var(--p-white);
-            
-            
-            /*borders*/
-            --border-surface: var(--m-grey);
-            --border-alt-surface: var(--m-grey);
-            --border-control: var(--d-grey);
         }
     </style>
 </head>
@@ -161,114 +122,117 @@
             <div class="buckets-container">
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Text</h3>
-                    <input type="color" value="#252525" class="margin-auto" name="--text" >
+                    <input type="color" class="margin-auto" name="--text" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Text Secondary</h3>
-                    <input type="color" value="#858585" class="margin-auto" name="--text-secondary" >
+                    <input type="color" class="margin-auto" name="--text-secondary" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Primary</h3>
-                    <input type="color" value="#0A78FC" class="margin-auto" name="--primary" >
+                    <input type="color" class="margin-auto" name="--primary" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Primary</h3>
-                    <input type="color" value="#FFFFFF" class="margin-auto" name="--on-primary" >
+                    <input type="color" class="margin-auto" name="--on-primary" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Secondary</h3>
-                    <input type="color" value="#0A78FC" class="margin-auto" name="--secondary" >
+                    <input type="color" class="margin-auto" name="--secondary" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Secondary</h3>
-                    <input type="color" value="#FFFFFF" class="margin-auto" name="--on-secondary" >
+                    <input type="color" class="margin-auto" name="--on-secondary" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Active</h3>
-                    <input type="color" value="#4297ff" class="margin-auto" name="--active" >
+                    <input type="color" class="margin-auto" name="--active" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
-                        <h3 class="color-title margin-auto">On Active</h3>
-                        <input type="color" value="#FFFFFF" class="margin-auto" name="--on-active" >
+                    <h3 class="color-title margin-auto">On Active</h3>
+                    <input type="color" class="margin-auto" name="--on-active" >
                     </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Inactive</h3>
-                    <input type="color" value="#A8D3F6" class="margin-auto" name="--inactive" > 
+                    <input type="color" class="margin-auto" name="--inactive" > 
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Background</h3>
-                    <input type="color" value="#F2F2F2" class="margin-auto" name="--background" >
+                    <input type="color" class="margin-auto" name="--background" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Background</h3>
-                    <input type="color" value="#858585" class="margin-auto" name="--on-background" >
+                    <input type="color" class="margin-auto" name="--on-background" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Control Background</h3>
-                    <input type="color" value="#e6e6e6" class="margin-auto" name="--control-background" >
+                    <input type="color" class="margin-auto" name="--control-background" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Textual Background</h3>
-                    <input type="color" value="#FCFCFC" class="margin-auto" name="--textual-background" >
+                    <input type="color" class="margin-auto" name="--textual-background" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Surface</h3>
-                    <input type="color" value="#FCFCFC" class="margin-auto" name="--surface-background" >
+                    <input type="color" class="margin-auto" name="--surface-background" >
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Surface</h3>
-                    <input type="color" value="#252525" class="margin-auto" name="--on-surface">
+                    <input type="color" class="margin-auto" name="--on-surface">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Alt Surface Background</h3>
-                    <input type="color" value="#858585" class="margin-auto" name="--alt-surface-background">
+                    <input type="color" class="margin-auto" name="--alt-surface-background">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Alternate Background</h3>
-                    <input type="color" value="#FFFFFF" class="margin-auto" name="--on-alt-background">
+                    <input type="color" class="margin-auto" name="--on-alt-background">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Error</h3>
-                    <input type="color" value="#f01445" class="margin-auto" name="--error">
+                    <input type="color" class="margin-auto" name="--error">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Error</h3>
-                    <input type="color" value="#FCFCFC" class="margin-auto" name="--on-error">
+                    <input type="color" class="margin-auto" name="--on-error">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Confirmation</h3>
-                    <input type="color" value="#0F9E5C" class="margin-auto" name="--confirmation">
+                    <input type="color" class="margin-auto" name="--confirmation">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Confirmation</h3>
-                    <input type="color" value="#FCFCFC" class="margin-auto" name="--on-confirmation">
+                    <input type="color" class="margin-auto" name="--on-confirmation">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Badge</h3>
-                    <input type="color" value="#F56A0D" class="margin-auto" name="--accent-badge">
+                    <input type="color" class="margin-auto" name="--accent-badge">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">On Accent Badge</h3>
-                    <input type="color" value="#FFFFFF" class="margin-auto" name="--on-accent-badge">
+                    <input type="color" class="margin-auto" name="--on-accent-badge">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Surface Border</h3>
-                    <input type="color" value="#e6e6e6" class="margin-auto" name="--border-surface">
+                    <input type="color" class="margin-auto" name="--border-surface">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Alt Surface Border</h3>
-                    <input type="color" value="#e6e6e6" class="margin-auto" name="--border-alt-surface">
+                    <input type="color" class="margin-auto" name="--border-alt-surface">
                 </div>
                 <div class="oui-bubble color-bucket-container">
                     <h3 class="color-title margin-auto">Control Border</h3>
-                    <input type="color" value="#858585" class="margin-auto" name="--border-control">
+                    <input type="color" class="margin-auto" name="--border-control">
                 </div>
             </div>
         </div>
     </div>
     <script>
+        let styles = getComputedStyle(document.documentElement);
         let colorInputs = document.querySelectorAll("[type=color]");
         colorInputs.forEach((inputColor) => {
+            let custPropValue = styles.getPropertyValue(inputColor.name);
+            inputColor.setAttribute('value', custPropValue.trim());
             inputColor.setAttribute('onchange', 'document.documentElement.style.setProperty(this.name, this.value)');
         });
 
